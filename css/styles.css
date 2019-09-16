@@ -1,0 +1,48 @@
+body{
+  font-family: sans-serif;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.viewer{
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 0 10px #666;
+  padding: 15px;
+}
+.large{
+  position: relative;
+}
+.large li{
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.large li.show{
+  opacity: 1;
+  z-index: 1;
+}
+
+.small{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 15px;
+}
+
+.small li:hover,
+.small li.active{
+  box-shadow: 0 0 10px #666;
+}
